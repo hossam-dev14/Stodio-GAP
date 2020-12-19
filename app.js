@@ -54,7 +54,11 @@ request.onload = function () {
       // console.log(movie.description)
     })
   } else {
-    console.log('error');
+    const errorMessage = document.createElement('error')
+    errorMessage.textContent = `Gah, it's not working!`
+    app.appendChild(errorMessage);
+
+    // console.log('error');
   }
 }
 
@@ -62,4 +66,21 @@ request.onload = function () {
 request.send()
 
 
+
+// // ****************************************
+// // Working with fetch
+// // ----------------------------------------
+
+// // Replace ./data.json with your JSON feed
+// fetch('https://ghibliapi.herokuapp.com/films')
+//   .then((response) => {
+//     return response.json()
+//   })
+//   .then((data) => {
+//     // Work with JSON data here
+//     console.log(data)
+//   })
+//   .catch((err) => {
+//     // Do something for an error here
+//   })
 
