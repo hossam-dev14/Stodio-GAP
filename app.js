@@ -1,8 +1,8 @@
 const app = document.getElementById('root');
 
 const logo = document.createElement('img');
-logo.src = 'logo.png';
-logo.alt = 'logo';
+logo.src = 'Logo.png';
+logo.alt = 'Stodio-GAP';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
@@ -62,25 +62,4 @@ request.onload = function () {
 request.send()
 
 
-
-
-
-
-// // ****************************************
-// // Working with fetch
-// // ----------------------------------------
-
-
-// // Replace ./data.json with your JSON feed
-// fetch('https://ghibliapi.herokuapp.com/films')
-//   .then((response) => {
-//     return response.json()
-//   })
-//   .then((data) => {
-//     // Work with JSON data here
-//     console.log(data)
-//   })
-//   .catch((err) => {
-//     // Do something for an error here
-//   })
 
